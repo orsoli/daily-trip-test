@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta data  -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Orsol Filaj">
+    <meta name="description" content="Daily Trip">
+    <!-- Title  -->
+    <title>Daily Trip</title>
+
+    <!-- FavIcon  -->
+    <link
+      rel="shortcut icon"
+      href="./img/DailyTrip-logo.png"
+      type="image/x-icon"
+>
+
+    <!-- Bootstrap Css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+>
+    <!-- Bootstrap icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+>
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+>
+
+    <!-- Css  -->
+    <link rel="stylesheet" href="index-style.css">
+  </head>
+  <body>
+    <!--  Background cover  -->
+    <div class="bg-cover pt-5">
+      <!-- Opacity container  -->
+      <div class="frame container rounded-4 w-75">
+        <!-- Header  -->
+        <header>
+          <!-- Header navbar  -->
+          <nav
+            class="navbar navbar-expand-lg bg-transparent"
+            data-bs-theme="dark"
+          >
+            <div class="container">
+              <!-- Logo  -->
+              <a class="navbar-brand" href="#">
+                <img src="./img/DailyTrip-logo.png" alt="logo" id="logo">
+              </a>
+              <!-- Menu Icon  -->
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+                id="burger-menu"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <!-- Navbar  -->
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item text-white">
+                    <a class="nav-link" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
+                </ul>
+                <!-- Search bar  -->
+                <form class="d-flex" role="search">
+                  <input
+                    class="form-control me-2"
+                    type="search"
+                    placeholder="Search"
+                    aria-label="Search"
+                  >
+                  <button class="btn btn-outline-success" type="submit">
+                    Search
+                  </button>
+                </form>
+              </div>
+            </div>
+          </nav>
+        </header>
+        <!-- Main  -->
+        <main>
+          <div class="row">
+            <div class="col col-12 text-white my-4" id="wellcome">
+              <h1 class="title">Welcome to south Albania</h1>
+              <p>Your perfect journey one long step from you</p>
+              <a href="https://www.instagram.com/dailytrip.albania" class="btn btn-outline-light">Learn more...</a>
+            </div>
+          </div>
+        </main>
+
+        <!-- Modal -->
+        <div class="modal fade" data-bs-theme="dark" id="destinationModal" tabindex="-1" aria-labelledby="titleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title text-light fs-5" id="titleModalLabel">Explore amazing Destinations</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body text-light">
+                <img id="modalImages">
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div> 
+
+    <!-- Script  -->
+    <script src="./index.js"></script>
+    <!-- Bootstrap script   -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js
+    "></script>
+  </body>
+</html>
